@@ -3,6 +3,7 @@
   "name": "LeetConnect",
   "description": "Helping you leetcode better !",
   "options_page": "options.html",
+  "version": "0.1.0",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
     "default_popup": "popup.html",
