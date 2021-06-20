@@ -1,6 +1,6 @@
-import { active_icons, inactive_icons } from '../icon_config'
+const { active_icons, inactive_icons } = require('../src/Config/icon_config.js')
 
-const TabsListener = () => {
+const TabsListener = (regex: RegExp) => {
   chrome.tabs.onActivated.addListener(() => {
     getActivatedTab()
   })
@@ -16,7 +16,7 @@ const TabsListener = () => {
           if (tabs[0] !== undefined && tabs[0].url) {
             const url = tabs[0].url
             const id = tabs[0].id
-            if (url.match('https://leetcode.com/*')) {
+            if (url.match(regex)) {
               chrome.action.setPopup({ tabId: id, popup: 'popup.html' })
               chrome.action.setIcon({ tabId: id, path: active_icons })
             } else {
@@ -25,7 +25,6 @@ const TabsListener = () => {
             }
           }
         } catch (err) {
-          // print(err)
           setTimeout(function () {
             getActivatedTab()
           }, 100)

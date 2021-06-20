@@ -11,10 +11,11 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "strictPropertyInitialization": false,
     "resolveJsonModule": true,
     "noEmit": false,
     "jsx": "react"
   },
-  "include": ["src"],
+  "include": ["src", "src/Config/icon_config.js", "utils/TabsListener.ts"],
   "exclude": ["build", "node_modules"]
 }
