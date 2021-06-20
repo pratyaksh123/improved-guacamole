@@ -1,6 +1,6 @@
-import TabsListener from "../Utils/TabsListener";
+import TabsListener from '../Utils/TabsListener'
 try {
-    TabsListener()
+  TabsListener()
 } catch (error) {
-    console.log(error);
+  console.log(error)
 }

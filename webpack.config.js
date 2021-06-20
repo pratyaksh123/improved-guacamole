@@ -40,7 +40,13 @@ var options = {
     popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.jsx'),
     background: path.join(__dirname, 'src', 'pages', 'Background', 'index.js'),
     contentScript: path.join(__dirname, 'src', 'pages', 'Content', 'index.js'),
-    inActivePage: path.join(__dirname, 'src', 'pages', 'InactivePage', 'index.jsx')
+    inActivePage: path.join(
+      __dirname,
+      'src',
+      'pages',
+      'InactivePage',
+      'index.jsx'
+    ),
   },
   chromeExtensionBoilerplate: {
     notHotReload: ['contentScript'],
@@ -209,11 +215,17 @@ var options = {
       cache: false,
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'pages', 'InactivePage', 'index.html'),
+      template: path.join(
+        __dirname,
+        'src',
+        'pages',
+        'InactivePage',
+        'index.html'
+      ),
       filename: 'inactive.html',
       chunks: ['inActivePage'],
       cache: false,
-    })
+    }),
   ],
   infrastructureLogging: {
     level: 'info',

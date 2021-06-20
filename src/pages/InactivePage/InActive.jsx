@@ -8,9 +8,7 @@ const Inactive = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This Extension Only works on Leetcode.com
-        </p>
+        <p>This Extension Only works on Leetcode.com</p>
         <a
           className="App-link"
           href="https://reactjs.org"
