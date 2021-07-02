@@ -6,8 +6,8 @@ const NoProblem = () => {
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
-      <h5 className="text">No Problems Scheduled for today.</h5>
-      <h5 className="text2">Do some new ones or take a break 💛</h5>
+      <h4 className="current__messageTop">No Problems Scheduled for today.</h4>
+      <h4 className="current__messageBottom">Do some new ones or take a break 💛</h4>
     </div>
   )
 }

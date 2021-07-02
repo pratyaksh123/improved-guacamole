@@ -13,13 +13,14 @@
 }
 
 .App-logo {
-  height: 5rem;
+  height: 7rem;
   pointer-events: none;
-  padding-top: 25%;
+  padding-top: 15%;
 }
 
-.text{
+.current__message {
   font-family: 'Mali', cursive;
+  font-size: 12.2px;
 }
 
 
