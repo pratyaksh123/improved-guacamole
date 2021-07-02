@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
+
+.App {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.App-logo {
+  height: 7rem;
+  pointer-events: none;
+  padding-top: 20%;
+}
+
+.current__messageTop{
+  font-family: 'Mali', cursive;
+  font-weight: 300;
+  padding-bottom: 5%;
+}
+
+.current__messageBottom{
+  font-family: 'Mali', cursive;
+  font-weight: regular;
+  padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+
