@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
 
 .App {
   position: absolute;
@@ -20,6 +20,13 @@
 
 .text{
   font-family: 'Mali', cursive;
+  font-weight: 300;
+  padding-bottom: 5%;
+}
+
+.text2{
+  font-family: 'Mali', cursive;
+  font-weight: regular;
 }
 
 

@@ -1,22 +1,12 @@
 import React from 'react'
-import logo from '../../assets/img/logo.svg'
+import notactive from '../../assets/img/notactive.svg'
 import './inActive.css'
 
 const Inactive = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>This Extension Only works on Leetcode.com</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
+      <img src={notactive} className="App-logo" alt="logo" />
+      <h5 className="text">This extenstion only works with Leetcode.com</h5>
     </div>
   )
 }
