@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../../assets/img/noproblem.svg'
-import './NoProblem.css'
+import './NoProblemPage.css'
 
-const NoProblem = () => {
+const NoProblemPage = () => {
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
@@ -12,4 +12,4 @@ const NoProblem = () => {
   )
 }
 
-export default NoProblem
+export default NoProblemPage
