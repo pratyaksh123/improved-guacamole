@@ -1,4 +1,4 @@
-const { active_icons, inactive_icons } = require('../src/Config/icon_config.js')
+const { active_icons, inactive_icons } = require('../Config/iconConfig.js')
 
 const TabsListener = (regex: RegExp) => {
   chrome.tabs.onActivated.addListener(() => {

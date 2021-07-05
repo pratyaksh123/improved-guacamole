@@ -16,6 +16,6 @@
     "noEmit": false,
     "jsx": "react"
   },
-  "include": ["src", "src/Config/icon_config.js", "utils/TabsListener.ts"],
+  "include": ["src", "src/Config/iconConfig.js", "src/utils/TabsListener.ts"],
   "exclude": ["build", "node_modules"]
 }

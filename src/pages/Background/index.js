@@ -1,4 +1,4 @@
-import TabsListener from '../../../utils/TabsListener'
+import TabsListener from '../../utils/TabsListener'
 
 const regex = RegExp('https://leetcode.com/*')
 try {

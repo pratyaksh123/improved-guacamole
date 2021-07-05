@@ -24,7 +24,8 @@
     {
       "matches": ["https://leetcode.com/*"],
       "js": ["contentScript.bundle.js"],
-      "css": ["content.styles.css"]
+      "css": ["content.styles.css"],
+      "run_at": "document_end"
     }
   ],
   "devtools_page": "devtools.html",
