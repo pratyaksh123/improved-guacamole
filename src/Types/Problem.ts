@@ -1,7 +1,7 @@
 class Problem {
-  problemNumber: number
-  problemName: string
-  problemDifficulty: string
+  problemId: number
+  problemName: String
+  problemDifficulty: String
 }
 
 export default Problem
