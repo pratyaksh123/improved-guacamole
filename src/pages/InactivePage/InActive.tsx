@@ -2,7 +2,7 @@ import React from 'react'
 import notactive from '../../assets/img/notactive.svg'
 import './inActive.css'
 
-const Inactive = () => {
+const Inactive:React.FC = () => {
   return (
     <div className="App">
       <img src={notactive} className="App-logo" alt="logo" />

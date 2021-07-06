@@ -1,8 +1,8 @@
-import React from 'react'
-import logo from '../../assets/img/noproblem.svg'
+import React, { ReactElement } from 'react'
+import logo from "../../assets/img/noproblem.svg"
 import './NoProblemPage.css'
 
-const NoProblemPage = () => {
+const NoProblemPage:React.FC = () => {
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />

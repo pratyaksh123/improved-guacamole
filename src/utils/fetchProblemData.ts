@@ -7,8 +7,8 @@ const FetchProblemData = (data: String, difficulty: String): Problem => {
 
   const problem = new Problem()
   problem.problemId = id
-  problem.problemName = name.trim()
-  problem.problemDifficulty = difficulty.trim()
+  problem.problemName = name?.trim()
+  problem.problemDifficulty = difficulty?.trim()
   return problem
 }
 

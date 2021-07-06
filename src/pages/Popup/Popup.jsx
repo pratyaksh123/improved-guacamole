@@ -1,27 +1,33 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../assets/img/logo.svg'
-// import './Popup.css'
-import NoProblemPage from "../../Components/NoProblemsPage/NoProblemPage"
+import NoProblemPage from '../../Components/NoProblemsPage/NoProblemPage'
+import isProblem from '../../utils/isProblem'
 
 const Popup = () => {
   const [url, setUrl] = useState('')
 
-  useEffect(()=>{
-    chrome.tabs.query({
-      active: true,
-      lastFocusedWindow: true
-  }, (tabs) => {
-      let tab = tabs[0];
-      setUrl(tab.url);
-  });
+  useEffect(() => {
+    console.log("HI")
+    chrome.tabs.query(
+      {
+        active: true,
+        lastFocusedWindow: true,
+      },
+      (tabs) => {
+        let tab = tabs[0]
+        setUrl(tab.url)
+      }
+    )
+  }, [])
 
-  },[])
-  return (
-    <div className="App">
-      {url && url.match("https://leetcode.com/problems/*") && (<p> Problem Detected !</p>)}
-       <NoProblemPage/>
-    </div>
-  )
+  if (url !== '' && isProblem(url)) {
+    return (
+      <div className="App">
+        <p>Problem</p>
+      </div>
+    )
+  } else {
+    return <NoProblemPage />
+  }
 }
 
 export default Popup
