@@ -5,42 +5,41 @@ const URL = window.location.toString()
 const check = isProblem(URL)
 // let problem = null
 
-chrome.runtime.onMessage.addListener(
-    function (message, sender, sendResponse) {
-        const res = fetchProblemFromDOM().then((t) => {
-            console.log(t.data)
-            sendResponse(t);
-        })
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  const res = fetchProblemFromDOM().then((t) => {
+    console.log(t.data)
+    sendResponse(t)
+  })
 
-        return true;
-    });
+  return true
+})
 
 async function fetchProblemFromDOM() {
-    return new Promise((resolve, reject) => {
-        console.log('Starting to Execute content script')
-        console.log(`Contenet script ${Math.random()}`)
-        var jsInitChecktimer = setInterval(checkForJS_Finish, 111)
+  return new Promise((resolve, reject) => {
+    console.log('Starting to Execute content script')
+    console.log(`Contenet script ${Math.random()}`)
+    var jsInitChecktimer = setInterval(checkForJS_Finish, 111)
 
-        function checkForJS_Finish() {
-            if (
-                document.getElementsByClassName('css-v3d350') !== undefined &&
-                document.getElementById('timer-difficulty') !== null
-            ) {
-                clearInterval(jsInitChecktimer)
-                const problemData = document.getElementsByClassName('css-v3d350')[0]
-                    .textContent
-                const problemDifficulty = document.getElementById('timer-difficulty')
-                    .firstElementChild.textContent
-                const problem = FetchProblemData(problemData, problemDifficulty)
-                console.log(problem)
-                resolve({ data: problem })
-            }
-        }
-    })
-
+    function checkForJS_Finish() {
+      if (
+        document.getElementsByClassName('css-v3d350') !== undefined &&
+        document.getElementById('timer-difficulty') !== null
+      ) {
+        clearInterval(jsInitChecktimer)
+        const problemData =
+          document.getElementsByClassName('css-v3d350')[0].textContent
+        const problemDifficulty =
+          document.getElementById('timer-difficulty').firstElementChild
+            .textContent
+        const problem = FetchProblemData(problemData, problemDifficulty)
+        console.log(problem)
+        resolve({ data: problem })
+      }
+    }
+  })
 }
 
 if (check) {
-    window.addEventListener('load', fetchProblemFromDOM, false)
-    fetchProblemFromDOM()
+  window.addEventListener('load', fetchProblemFromDOM, false)
+  fetchProblemFromDOM()
 }
