@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+coverage
+.github
+
+# Ignore all HTML and CSS files:
+*.html
+*.css
