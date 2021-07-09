@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NoProblemPage from '../../Components/NoProblemsPage/NoProblemPage'
 import FetchProblemData from '../../utils/fetchProblemData'
 import isProblem from '../../utils/isProblem'
+import ProblemsPage from './ProblemsPage/ProblemsPage'
 
 const Popup = () => {
   const [url, setUrl] = useState('')
@@ -20,7 +21,6 @@ const Popup = () => {
           tab.id,
           { action: 'executeCode' },
           (response) => {
-            console.log(response)
             setCurrentProblem(response.data)
           }
         )
@@ -29,12 +29,17 @@ const Popup = () => {
   }, [])
 
   if (url !== '' && isProblem(url)) {
+    console.log(currentProblem)
     return (
       <div className="App">
         <p>Problem</p>
-        {currentProblem && <p>{currentProblem.problemName}</p>}
-        {currentProblem && <p>{currentProblem.problemId}</p>}
-        {currentProblem && <p>{currentProblem.problemDifficulty}</p>}
+        {currentProblem && (
+          <ProblemsPage
+            problemName={currentProblem.problemName}
+            problemDifficulty={currentProblem.problemDifficulty}
+            problemId={currentProblem.problemId}
+          />
+        )}
       </div>
     )
   } else {

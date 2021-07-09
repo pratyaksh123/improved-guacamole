@@ -7,7 +7,6 @@ const check = isProblem(URL)
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   const res = fetchProblemFromDOM().then((t) => {
-    console.log(t.data)
     sendResponse(t)
   })
 
@@ -32,7 +31,6 @@ async function fetchProblemFromDOM() {
           document.getElementById('timer-difficulty').firstElementChild
             .textContent
         const problem = FetchProblemData(problemData, problemDifficulty)
-        console.log(problem)
         resolve({ data: problem })
       }
     }
