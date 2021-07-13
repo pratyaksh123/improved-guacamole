@@ -16,17 +16,14 @@ function ProblemsPage({ problemName, problemId, problemDifficulty }) {
         </div>
       </div>
       <div className="question">{problemName}</div>
-      <div className="buttons">
-        <div className="first__button">
-          <Button className="btna" variant="contained" color="primary">
-            Add Hints
-          </Button>
-        </div>
-        <div className="second__button">
-          <Button className="btnb" variant="contained" color="secondary">
-            Add Approach
-          </Button>
-        </div>
+      <div className="action_buttons">
+        <Button className="btn" variant="contained" color="primary">
+          Add Hints
+        </Button>
+
+        <Button className="btn" variant="contained" color="secondary">
+          Add Approach
+        </Button>
       </div>
     </div>
   )

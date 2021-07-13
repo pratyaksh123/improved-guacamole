@@ -29,15 +29,17 @@ const Popup = () => {
   }, [])
 
   if (url !== '' && isProblem(url)) {
-    document.body.style.setProperty('height', '200px')
+    document.body.style.setProperty('height', '190px')
     return (
       <>
-        {currentProblem && (
+        {currentProblem ? (
           <ProblemsPage
             problemName={currentProblem.problemName}
             problemDifficulty={currentProblem.problemDifficulty}
             problemId={currentProblem.problemId}
           />
+        ) : (
+          <p>Loading... ( Reopen popup if unresponsive )</p>
         )}
       </>
     )
