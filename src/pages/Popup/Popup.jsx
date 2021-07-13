@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import NoProblemPage from '../../Components/NoProblemsPage/NoProblemPage'
-import FetchProblemData from '../../utils/fetchProblemData'
 import isProblem from '../../utils/isProblem'
 import ProblemsPage from './ProblemsPage/ProblemsPage'
 import './Popup.css'
@@ -30,9 +29,9 @@ const Popup = () => {
   }, [])
 
   if (url !== '' && isProblem(url)) {
-    console.log(currentProblem)
+    document.body.style.setProperty('height', '200px')
     return (
-      <div>
+      <>
         {currentProblem && (
           <ProblemsPage
             problemName={currentProblem.problemName}
@@ -40,7 +39,7 @@ const Popup = () => {
             problemId={currentProblem.problemId}
           />
         )}
-      </div>
+      </>
     )
   } else {
     return <NoProblemPage />

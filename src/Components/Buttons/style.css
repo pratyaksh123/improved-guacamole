@@ -1,5 +1,4 @@
 .easy {
-  height: 80%;
   background-color: #60b963;
   font-family: 'Mali', cursive;
   font-size: 10px;
@@ -11,7 +10,6 @@
   margin-left: 20px;
 }
 .medium {
-  height: 80%;
   background-color: #eea95c;
   font-family: 'Mali', cursive;
   font-size: 10px;
@@ -23,7 +21,6 @@
   margin-left: 20px;
 }
 .hard {
-  height: 80%;
   background-color: #d74955;
   font-family: 'Mali', cursive;
   font-size: 10px;
