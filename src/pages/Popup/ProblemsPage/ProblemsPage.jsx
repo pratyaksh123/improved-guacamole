@@ -1,26 +1,15 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 import './ProblemsPage.css'
+import DifficultyButton from '../../../Components/DifficultyButton/DifficultyButton'
 
 function ProblemsPage({ problemName, problemId, problemDifficulty }) {
-  function renderSwitch(e) {
-    switch (e) {
-      case 'Easy':
-        return 'easy'
-      case 'Hard':
-        return 'hard'
-      case 'Medium':
-        return 'medium'
-    }
-  }
   return (
     <div className="page">
       <div className="question__headingLeft">
         <div className="question__number">{problemId}</div>
         <div className="question__tag">
-          <button className={renderSwitch(problemDifficulty)}>
-            {problemDifficulty}
-          </button>
+          <DifficultyButton variant={problemDifficulty} />
         </div>
       </div>
       <div className="questions__headingRight">

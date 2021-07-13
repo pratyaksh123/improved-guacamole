@@ -19,42 +19,7 @@
   margin-left: 20px;
   font-size: 20px;
 }
-.easy {
-  height: 80%;
-  background-color: #5cb85c;
-  font-family: 'Mali', cursive;
-  font-size: 10px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-left: 20px;
-}
-.medium {
-  height: 80%;
-  background-color: brown;
-  font-family: 'Mali', cursive;
-  font-size: 10px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-left: 20px;
-}
-.hard {
-  height: 80%;
-  background-color: red;
-  font-family: 'Mali', cursive;
-  font-size: 10px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-left: 20px;
-}
+
 .buttons {
   display: flex;
   justify-content: space-evenly;
@@ -62,23 +27,23 @@
   margin-right: 20px;
 }
 .first__button {
-    margin-right: 20px;
-    font-family: 'Mali', cursive;
-    height: 50%;
+  margin-right: 20px;
+  font-family: 'Mali', cursive;
+  height: 50%;
 }
-.btna{
-    font-family: 'Mali', cursive !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-    text-transform: capitalize !important;
+.btna {
+  font-family: 'Mali', cursive !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  text-transform: capitalize !important;
 }
-.btnb{
-    font-family: 'Mali', cursive !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-    text-transform: capitalize !important;
+.btnb {
+  font-family: 'Mali', cursive !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  text-transform: capitalize !important;
 }

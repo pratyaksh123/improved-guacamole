@@ -1,0 +1,36 @@
+.easy {
+  height: 80%;
+  background-color: #60b963;
+  font-family: 'Mali', cursive;
+  font-size: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.medium {
+  height: 80%;
+  background-color: #eea95c;
+  font-family: 'Mali', cursive;
+  font-size: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.hard {
+  height: 80%;
+  background-color: #d74955;
+  font-family: 'Mali', cursive;
+  font-size: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+}

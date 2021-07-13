@@ -3,6 +3,7 @@ import NoProblemPage from '../../Components/NoProblemsPage/NoProblemPage'
 import FetchProblemData from '../../utils/fetchProblemData'
 import isProblem from '../../utils/isProblem'
 import ProblemsPage from './ProblemsPage/ProblemsPage'
+import './Popup.css'
 
 const Popup = () => {
   const [url, setUrl] = useState('')
@@ -31,8 +32,7 @@ const Popup = () => {
   if (url !== '' && isProblem(url)) {
     console.log(currentProblem)
     return (
-      <div className="App">
-        <p>Problem</p>
+      <div>
         {currentProblem && (
           <ProblemsPage
             problemName={currentProblem.problemName}
