@@ -18,13 +18,15 @@ const Popup = () => {
       (tabs) => {
         let tab = tabs[0]
         setUrl(tab.url)
-        chrome.tabs.sendMessage(
-          tab.id,
-          { action: 'executeCode' },
-          (response) => {
-            setCurrentProblem(response.data)
-          }
-        )
+        if (isProblem(tab.url)) {
+          chrome.tabs.sendMessage(
+            tab.id,
+            { action: 'executeCode' },
+            (response) => {
+              setCurrentProblem(response.data)
+            }
+          )
+        }
       }
     )
   }, [])
