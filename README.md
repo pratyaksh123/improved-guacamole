@@ -10,10 +10,11 @@
    1. Click on `Load unpacked extension`
    1. Select the `build` folder
 
-
-
 #### Read more about this project here - [Leetconnect](https://www.notion.so/LeetConnect-0e6944e1d1c84dd2872f1b43b86b3050)
+
 [![DeepScan grade](https://deepscan.io/api/teams/14723/projects/17803/branches/420995/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=14723&pid=17803&bid=420995)
 [![Lint](https://github.com/pratyaksh123/improved-guacamole/actions/workflows/lint.yml/badge.svg)](https://github.com/pratyaksh123/improved-guacamole/actions/workflows/lint.yml)
+
 ---
+
 ##### Uses this boilerplate - [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-extension-boilerplate-react)

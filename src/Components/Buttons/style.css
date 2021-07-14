@@ -1,0 +1,19 @@
+.base {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 10px;
+  color: white;
+  border: none;
+}
+
+.easy {
+  background-color: #60b963;
+}
+.medium {
+  background-color: #eea95c;
+}
+.hard {
+  background-color: #d74955;
+}

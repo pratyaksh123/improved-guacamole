@@ -1,0 +1,35 @@
+.question__heading {
+  display: flex;
+  flex-direction: row;
+}
+.question__number {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.question {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-size: 5vw;
+}
+
+.action_buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  font-family: 'Ubuntu', 'sans-serif';
+  font-size: 20px;
+  font-size: 5vw !important;
+  font-weight: 500;
+  text-transform: capitalize !important;
+}
+
+.page {
+  padding: 0.2rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}

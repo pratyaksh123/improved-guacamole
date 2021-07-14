@@ -10,11 +10,12 @@
   "scripts": {
     "build": "node src/utils/build.js",
     "start": "node src/utils/webserver.js",
-    "format": "prettier --write **/*.{js,jsx,css,html}",
+    "format": "prettier --write **/*.{js,jsx,css,html,json,tsx,ts}",
     "lint": "eslint --fix **/*.{js,jsx}"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.1",
+    "@material-ui/core": "^4.12.1",
     "@types/chrome": "0.0.132",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",

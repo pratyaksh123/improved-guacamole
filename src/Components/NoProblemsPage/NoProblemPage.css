@@ -18,22 +18,12 @@
   padding-top: 20%;
 }
 
-.current__messageTop{
-  font-family: 'Mali', cursive;
-  font-weight: 300;
+.current__messageTop {
+  font-weight: 400;
   padding-bottom: 5%;
 }
 
-.current__messageBottom{
-  font-family: 'Mali', cursive;
+.current__messageBottom {
   font-weight: regular;
   padding-bottom: 5%;
 }
-
-
-
-
-
-
-
-
