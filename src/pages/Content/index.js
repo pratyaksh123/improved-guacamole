@@ -6,7 +6,7 @@ const check = isProblem(URL)
 // let problem = null
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  const res = fetchProblemFromDOM().then((t) => {
+  fetchProblemFromDOM().then((t) => {
     sendResponse(t)
   })
 

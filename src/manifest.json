@@ -10,9 +10,8 @@
     "default_popup": "inactive.html",
     "default_title": "Leet Connect",
     "default_icon": {
-      "128" : "icon-128.png"
+      "128": "icon-128.png"
     }
-  
   },
   "icons": {
     "16": "get_started16.png",

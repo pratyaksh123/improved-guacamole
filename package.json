@@ -10,7 +10,7 @@
   "scripts": {
     "build": "node src/utils/build.js",
     "start": "node src/utils/webserver.js",
-    "format": "prettier --write **/*.{js,jsx,css,html}",
+    "format": "prettier --write **/*.{js,jsx,css,html,json,tsx,ts}",
     "lint": "eslint --fix **/*.{js,jsx}"
   },
   "dependencies": {

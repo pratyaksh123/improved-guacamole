@@ -1,6 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { createTheme, ThemeProvider } from '@material-ui/core/styles'
+import Popup from './Popup'
+import './index.css'
 
 const theme = createTheme({
   palette: {
@@ -12,9 +14,6 @@ const theme = createTheme({
     },
   },
 })
-
-import Popup from './Popup'
-import './index.css'
 
 render(
   <ThemeProvider theme={theme}>

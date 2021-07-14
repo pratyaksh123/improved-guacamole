@@ -1,13 +1,15 @@
 import React, { ReactElement } from 'react'
-import logo from "../../assets/img/noproblem.svg"
+import logo from '../../assets/img/noproblem.svg'
 import './NoProblemPage.css'
 
-const NoProblemPage:React.FC = () => {
+const NoProblemPage: React.FC = () => {
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
       <h4 className="current__messageTop">No Problems Scheduled for today.</h4>
-      <h4 className="current__messageBottom">Do some new ones or take a break 💛</h4>
+      <h4 className="current__messageBottom">
+        Do some new ones or take a break 💛
+      </h4>
     </div>
   )
 }

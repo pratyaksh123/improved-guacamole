@@ -10,6 +10,8 @@ const Button = ({ variant }) => {
         return 'hard'
       case 'Medium':
         return 'medium'
+      default:
+        return 'easy'
     }
   }
 
