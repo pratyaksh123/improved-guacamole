@@ -3,6 +3,7 @@ import NoProblemPage from '../../Components/NoProblemsPage/NoProblemPage'
 import isProblem from '../../utils/isProblem'
 import ProblemsPage from './ProblemsPage/ProblemsPage'
 import './Popup.css'
+import { CircularProgress } from '@material-ui/core'
 
 const Popup = () => {
   const [url, setUrl] = useState('')
@@ -39,7 +40,12 @@ const Popup = () => {
             problemId={currentProblem.problemId}
           />
         ) : (
-          <p>Loading... ( Reopen popup if unresponsive )</p>
+          <div className="circularProgress" style={{ flexDirection: 'column' }}>
+            <div className="circularProgress">
+              <CircularProgress color="primary" />
+            </div>
+            <p>Reopen if it takes longer..</p>
+          </div>
         )}
       </>
     )
