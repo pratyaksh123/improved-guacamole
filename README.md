@@ -1,3 +1,5 @@
+> A LeetCode problem a day keeps unemployement away.
+
 ## Steps to run locally
 
 1. Make sure you have [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) installed on your machine.
